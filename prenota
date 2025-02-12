@@ -26,6 +26,7 @@
         <link rel="stylesheet" media="screen and (max-width: 400px)" href="style_mobile.css">
 
     </head>
+    
     <style>
     body {
       font-family: Arial, sans-serif;
@@ -196,6 +197,9 @@
     <form action="/prenotazione" method="post">
         <label for="name">Nome</label>
         <input type="text" id="name" name="name" placeholder="Inserisci il tuo nome" required>
+
+        <label for="name">Cognome</label>
+        <input type="text" id="name" name="name" placeholder="Inserisci il tuo cognome" required>
         
         <label for="email">Email</label>
         <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
@@ -205,6 +209,14 @@
         
         <label for="checkout">Check-out</label>
         <input type="date" id="checkout" name="checkout" required>
+
+        <label for="tipo di camera">Seleziona la camera</label>
+        <select id="camera">
+           <option value="1">1 Ospite</option>
+            <option value="2">2 Ospiti</option>
+            <option value="3">3 Ospiti</option>
+            <option value="4">4 Ospiti</option>
+        </select>
         
         <label for="guests">Numero di ospiti</label>
         <select id="guests" name="guests" required>
@@ -217,6 +229,7 @@
         <button type="submit">Prenota Ora</button>
     </form>
   </div>
+ 
  
   <footer>
     <div class="testo font_medio">
