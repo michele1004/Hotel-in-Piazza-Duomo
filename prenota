@@ -210,12 +210,12 @@
         <label for="checkout">Check-out</label>
         <input type="date" id="checkout" name="checkout" required>
 
-        <label for="tipo di camera">Seleziona la camera</label>
+         <label for="tipo di camera">Seleziona la camera</label>
         <select id="camera">
-           <option value="1">1 Ospite</option>
-            <option value="2">2 Ospiti</option>
-            <option value="3">3 Ospiti</option>
-            <option value="4">4 Ospiti</option>
+           <option value="singola">Singola</option>
+            <option value="doppia">Doppia</option>
+            <option value="tripla">Tripla</option>
+            <option value="suite">Suite</option>
         </select>
         
         <label for="guests">Numero di ospiti</label>
