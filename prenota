@@ -139,6 +139,46 @@
     background-color: #45a049;
    }
   </style>
+
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .banner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .banner p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            color: #ddd;
+        }
+  </style>
  
  <body>
     <div id="header_logo_menu" class="annulla_font">
@@ -210,7 +250,7 @@
         <label for="checkout">Check-out</label>
         <input type="date" id="checkout" name="checkout" required>
 
-         <label for="tipo di camera">Seleziona la camera</label>
+        <label for="tipo di camera">Seleziona la camera</label>
         <select id="camera">
            <option value="singola">Singola</option>
             <option value="doppia">Doppia</option>
@@ -226,7 +266,9 @@
             <option value="4">4 Ospiti</option>
         </select>
         
-        <button type="submit">Prenota Ora</button>
+       
+        <button type="submit" href="prenotazione.html">Prenota Ora</button>
+      
     </form>
   </div>
  
@@ -287,6 +329,14 @@
   <br>
   <br>
   <br>
+
+ 
+
+<script>
+    function closeBanner() {
+        document.getElementById("banner").style.display = "none";
+    }
+</script>
 
   <script>
   let currentIndex = 0;
