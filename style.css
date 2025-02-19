@@ -96,7 +96,7 @@ A:active{color: #000; text-decoration: none;}
 #credits{padding: 20px;}
 
 
-#titolo_pagina H1{background-color: rgb(124, 3, 3); color: #FFF; padding:20px; text-transform: uppercase;}
+#titolo_pagina H1{background-color: #9a7b4f; color: black; padding:20px; text-transform: uppercase;}
 
 .box_lista{margin-bottom: 20px; padding-bottom:20px; border-bottom: dotted 2px #EEE;}
 .img_lista{width:30%;}
